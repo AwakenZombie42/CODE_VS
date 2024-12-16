@@ -8,7 +8,7 @@ print("String value: ", (c+d));
 
 print("subtraction:", (a-b));
 print("multiplication:", (a*b));
-print("dicision:", (a/b));
+print("division:", (a/b));
 print("modulus:", (a%b));
 print("exponential:", (a**b));
 print("floor division:", (a//b));

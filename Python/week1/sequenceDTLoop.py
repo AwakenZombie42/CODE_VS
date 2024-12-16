@@ -18,6 +18,7 @@ print(name[0]);
  print(name[0]);
  TypeError: 'str' object does not support item assignment
 '''
+# For loop
 
 List = [69, 70, 71, 72, 73, 74, 75];
 
