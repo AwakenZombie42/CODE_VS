@@ -1,0 +1,116 @@
+Section 1: Conceptual Questions
+1. What are the four main principles of OOP? Briefly explain each.
+Ans:
+    Encapsulation: Bundling of data (attributes) and methods (functions) operating on
+                   the data into a single unit (class). It helps protect the internal
+                   state of an object and ensures controlled access.
+    Inheritance: Mechanism by which one class (child) derives properties and behaviors
+                 from another class (parent). It promotes code reusability.
+    Polymorphism: Ability of different objects to respond differently to the same operation.
+                  It is implemented through method overriding and interfaces.
+    Abstraction: Hiding complex implementation details and exposing only the necessary
+                 functionality. Achieved using abstract classes or interfaces.
+
+2. Differentiate between a class and an object in Python.
+Ans:
+    Class: A blueprint or template for creating objects. It defines properties (attributes) and behaviors (methods).
+    Example: class Car:
+    Object: An instance of a class. It holds actual data and operates based on the methods defined in its class.
+    Example: my_car = Car()
+
+3. What is the purpose of the __init__ method in Python classes?
+Ans:
+    The __init__ method is the constructor in Python. It initializes an object’s attributes when it is created.
+    It is called automatically when an object is instantiated.
+    Example:
+            class Person:
+            def __init__(self, name, age):
+                self.name = name
+                self.age = age
+
+            p = Person("Alice", 30)  # Automatically calls __init__
+
+
+4. Explain the difference between class methods, instance methods, and static methods in Python. Provide an example for each.
+Ans:
+    Instance Method: Operates on an instance of the class and can access or modify the object’s state. Defined with self as the first parameter.
+    class Example:
+    def instance_method(self):
+        print("I am an instance method")
+    
+    Class Method: Operates on the class itself rather than its instances. Uses @classmethod decorator and cls as the first parameter.
+    class Example:
+    @classmethod
+    def class_method(cls):
+        print("I am a class method")
+    
+    Static Method: Does not depend on the class or its instances. Uses @staticmethod decorator and takes no special parameter (self or cls).
+    class Example:
+    @staticmethod
+    def static_method():
+        print("I am a static method")
+
+
+
+5. What is inheritance? How does Python support multiple inheritance? Provide an example.
+Ans:
+    Inheritance is a mechanism where a class (child) can inherit attributes and methods from another class (parent).
+        Python's Multiple Inheritance: Python supports multiple inheritance, where a class can inherit from more than one parent class.
+        Example:
+                class Parent1:
+                    def method1(self):
+                        print("Parent1 method")
+
+                class Parent2:
+                    def method2(self):
+                        print("Parent2 method")
+
+                class Child(Parent1, Parent2):
+                    pass
+
+                c = Child()
+                c.method1()  # Inherited from Parent1
+                c.method2()  # Inherited from Parent2
+
+
+6. What is polymorphism, and how is it implemented in Python?
+Ans:
+    Polymorphism allows different classes to define methods with the same name, which behave differently based on the object’s class.
+    Example:
+            class Dog:
+                def speak(self):
+                    return "Bark"
+
+            class Cat:
+                def speak(self):
+                    return "Meow"
+
+            animals = [Dog(), Cat()]
+            for animal in animals:
+                print(animal.speak())  # Calls the method defined in the respective class
+
+
+7. Explain the difference between method overloading and method overriding in Python.
+Ans:
+    Method Overloading: Defining multiple methods with the same name but different parameters.
+    Python does not support true overloading; instead, you can handle it by using default
+    arguments or variable arguments (*args, **kwargs).
+    Example:
+        class Example:
+            def method(self, a=None, b=None):
+                if b:
+                    return a + b
+                return a
+
+    Method Overriding: Redefining a method in the child class that already exists in the parent class.
+    Example:
+        class Parent:
+            def show(self):
+                print("Parent's method")
+
+        class Child(Parent):
+            def show(self):
+                print("Child's method")
+
+        c = Child()
+        c.show()  # Calls the overridden method in Child
