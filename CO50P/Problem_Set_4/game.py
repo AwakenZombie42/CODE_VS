@@ -31,5 +31,5 @@ def get_guess(num):
         except ValueError:
             continue
 
-if __name__ == "__main__":
+if __name__ == "__main__"
     main()
