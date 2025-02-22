@@ -2,7 +2,7 @@
 #### Video Demo: <URL HERE>
 #### Description:
 
-This project is a simple **Expense Tracker** application that allows users to **record, view, and calculate their total expenses**. It helps users manage their spending efficiently by keeping a log of all their expenses.
+This project is a simple **Expense Tracker** application that allows users to **Add , record, view, and calculate their total expenses**. It helps users manage their spending efficiently by keeping a log of all their expenses.
 
 ### **Features:**
 1. **Add Expenses**: Users can input a description and amount for each expense.
@@ -17,6 +17,18 @@ This project is a simple **Expense Tracker** application that allows users to **
 - **pytest**: Unit testing framework for automated tests.
 
 ### **How to Use:**
-1. **Run the application**:  
+1. **Run the application**:
    ```sh
    python project.py
+2. **Select one option from the 4 that appear**
+   ```sh
+   Expense Tracker Menu:
+   1. Add Expense
+   2. View Expenses
+   3. Calculate Total       
+   4. Save and Exit
+   Enter your choice (1-4):
+3. **Pressing 1 allows you to add items to the list**
+4. **Pressing 2 allows you to view items in the list**
+5. **Pressing 3 allows you to calculate the final price of the items in the list**
+6. **Pressing 4 allows you to save items in the list which can be viewed again later when you open the text file or run the code**
