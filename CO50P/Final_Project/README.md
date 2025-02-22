@@ -20,7 +20,7 @@ This project is a simple **Expense Tracker** application that allows users to **
 1. **Run the application**:
    ```sh
    python project.py
-2. **Select one option from the 4 that appear**
+2. **Select one option from the 4 that appear**:
    Expense Tracker Menu:
    1. Add Expense
    2. View Expenses
