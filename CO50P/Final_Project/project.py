@@ -1,5 +1,28 @@
 import os
 
+def main():
+    load_from_file()
+    while True:
+        print("\nExpense Tracker Menu:")
+        print("1. Add Expense")
+        print("2. View Expenses")
+        print("3. Calculate Total")
+        print("4. Save and Exit")
+        
+        choice = input("Enter your choice (1-4): ")
+        if choice == "1":
+            add_expense()
+        elif choice == "2":
+            view_expenses()
+        elif choice == "3":
+            calculate_total()
+        elif choice == "4":
+            save_to_file()
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
 # List to store expenses
 expenses = []
 
@@ -44,28 +67,6 @@ def calculate_total():
     print(f"Total expenses: ${total:.2f}")
 
 # Main menu
-def main():
-    load_from_file()
-    while True:
-        print("\nExpense Tracker Menu:")
-        print("1. Add Expense")
-        print("2. View Expenses")
-        print("3. Calculate Total")
-        print("4. Save and Exit")
-        
-        choice = input("Enter your choice (1-4): ")
-        if choice == "1":
-            add_expense()
-        elif choice == "2":
-            view_expenses()
-        elif choice == "3":
-            calculate_total()
-        elif choice == "4":
-            save_to_file()
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice. Please try again.")
 
 # Run the application
 if __name__ == "__main__":
