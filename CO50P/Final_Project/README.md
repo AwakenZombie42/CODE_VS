@@ -31,4 +31,4 @@ This project is a simple **Expense Tracker** application that allows users to **
 3. **Pressing 1 allows you to add items to the list**
 4. **Pressing 2 allows you to view items in the list**
 5. **Pressing 3 allows you to calculate the final price of the items in the list**
-6. **Pressing 4 allows you to save items in the list which can be viewed again later when you open the text file or run the code**
+6. **Pressing 4 allows you to save items in the list which can be viewed again later when you open the text file or run code**
