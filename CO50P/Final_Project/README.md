@@ -21,12 +21,10 @@ This project is a simple **Expense Tracker** application that allows users to **
    ```sh
    python project.py
 2. **Select one option from the 4 that appear**:
-   Expense Tracker Menu:
    1. Add Expense
    2. View Expenses
    3. Calculate Total       
    4. Save and Exit
-   Enter your choice (1-4):
 3. **Pressing 1 allows you to add items to the list**
 4. **Pressing 2 allows you to view items in the list**
 5. **Pressing 3 allows you to calculate the final price of the items in the list**
