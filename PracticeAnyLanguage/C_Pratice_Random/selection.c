@@ -5,9 +5,9 @@ int arr[MAX_SIZE];
 int n, i, j, min, temp, count;
 void selectionSort() {
     count = 0; // Initialize count to 0 before sorting
-    for (i = 0; i < n - 1; i++) {
+    for (i = 0; i <= n - 2; i++) {
         min = i;
-        for (j = i + 1; j < n; j++) {
+        for (j = i + 1; j <= n - 1; j++) {
             count++;
             if (arr[j] < arr[min]) {
                 min = j;
